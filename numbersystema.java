@@ -17,6 +17,7 @@ public class numbersystema{
             System.out.print("PLEASE ENTER YOUR CHOICE : ");
             int numbersystem = hu.nextInt();
             System.out.println();
+
             while ( numbersystem != 1 && numbersystem != 2 && numbersystem != 3 && numbersystem != 4 ) {
                 System.out.println("YOUR CHOICE DOESNOT MEET ANY OF OPTIONS !! ");
                 System.out.print("PLEASE ENTER YOUR CHOICE AGAIN : ");
@@ -25,7 +26,9 @@ public class numbersystema{
 
             switch (numbersystem) {
                 case 1 : {
+
                     char binarychoice;
+
                     do {    
                         System.out.println();   
                         System.out.println("\"WELCOME TO BINARY NUMBER SYSTEM \"");
@@ -36,13 +39,16 @@ public class numbersystema{
 
                         boolean binaryb;
                         do {
+
                             binaryb = true;
+
                             for (int i = 0; i < binaryvalue.length(); i++) {
                                 char x = binaryvalue.charAt(i);
                                 if (  x < '0' || x > '1' ) {
                                     binaryb = binaryb && false;
                                 }
                             }
+
                             if (binaryb == false ) {
                                 System.out.println("GIVEN VALUE IS NOT IN BINARY !!");
                                 System.out.print("PLEASE GIVE YOUR INPUT BINARY VALUE HERE AGAIN : ");
@@ -70,21 +76,25 @@ public class numbersystema{
                         }
 
                         switch (binaryconvechoice) {
+
                             case 1 : {
                                 System.out.println("BINARY TO OCTAL ");
                                 binaryToOctal( binaryvalue );
                             }
                             break;
+
                             case 2 : {
                                 System.out.println("BINARY TO DECIMAL ");
                                 binaryToDecimal ( binaryvalue );
                             }
                             break;
+
                             case 3 : {
                                 System.out.println("BINARY TO HEXA-DECIMAL ");
                                 binaryToHexadecimal( binaryvalue );
                             }
                             break;
+
                             case 4 : {
                                 System.out.println("BINARY TO ALL NUMBER SYSTEMS ");
                                 System.out.println();
@@ -100,6 +110,7 @@ public class numbersystema{
                             }
                             break;
                         }
+
                         System.out.println();
                         System.out.println("\"YOUR APP YOUR CHOICE\"");
                         System.out.println("IF YOU WANT TO USE BINARY NS AGAIN \" ENTER Y OR y \" ");
@@ -113,7 +124,9 @@ public class numbersystema{
                 }    
                 break;
                 case 2 : {
+
                     char octalchoice;
+
                     do {
                         System.out.println();
                         System.out.println("\"WELCOME TO OCTAL NUMBER SYSTEM \"");
@@ -124,13 +137,16 @@ public class numbersystema{
 
                         boolean octalb;
                         do {
+
                             octalb = true;
+
                             for (int i = 0; i < octalvalue.length(); i++) {
                                 char x = octalvalue.charAt(i);
                                 if (  x < '0' || x > '7' ) {
                                     octalb = octalb && false;
                                 }
                             }
+
                             if (octalb == false ) {
                                 System.out.println("GIVEN VALUE IS NOT IN OCTAL !!");
                                 System.out.print("PLEASE GIVE YOUR INPUT OCTAL VALUE HERE AGAIN : ");
@@ -158,21 +174,25 @@ public class numbersystema{
                         }
 
                         switch (octalconvechoice) {
+
                             case 1 : {
                                 System.out.println("OCTAL TO BINARY ");
                                 octalToBinary( octalvalue );
                             }
                             break;
+
                             case 2 : {
                                 System.out.println("OCTAL TO DECIMAL ");
                                 octalToDecimal( octalvalue );
                             }
                             break;
+
                             case 3 : {
                                 System.out.println("OCTAL TO HEXA-DECIMAL ");
                                 octalToHexadecimal( octalvalue );
                             }
                             break;
+
                             case 4 : {
                                 System.out.println("\"OCTAL TO ALL NUMBER SYSTEMS\" ");
                                 System.out.println();
@@ -188,6 +208,7 @@ public class numbersystema{
                             }
                             break;
                         }
+
                         System.out.println();
                         System.out.println("\"YOUR APP YOUR CHOICE\"");
                         System.out.println("IF YOU WANT TO USE OCTAL NS AGAIN \" ENTER Y OR y \" ");
@@ -201,7 +222,9 @@ public class numbersystema{
                 }
                 break;
                 case 3 : {
+
                     char decimalchoice;
+
                     do {
                         System.out.println();
                         System.out.println("\"WELCOME TO DECIMAL NUMBER SYSTEM\" ");
@@ -213,12 +236,15 @@ public class numbersystema{
                         boolean decimalb;
                         do {
                             decimalb = true;
+
                             for (int i = 0; i < decimalvalue.length(); i++) {
                                 char x = decimalvalue.charAt(i);
+
                                 if (  x < '0' || x > '9' ) {
                                     decimalb = decimalb && false;
                                 }
                             }
+
                             if (decimalb == false ) {
                                 System.out.println("GIVEN VALUE IS NOT IN DECIMAL !!");
                                 System.out.print("PLEASE GIVE YOUR INPUT DECIMAL VALUE HERE AGAIN : ");
@@ -246,21 +272,25 @@ public class numbersystema{
                         }
 
                         switch (decimalconvechoice) {
+
                             case 1 : {
                                 System.out.println("DECIMAL TO BINARY ");
                                 decimalToBinary( decimalvalue );
                             }
                             break;
+
                             case 2 : {
                                 System.out.println("DECIMAL TO OCTAL ");
                                 decimalToOctal( decimalvalue );
                             }
                             break;
+
                             case 3 : {
                                 System.out.println("DECIMAL TO HEXA-DECIMAL ");
                                 decimalToHexadecimal( decimalvalue );
                             }
                             break;
+
                             case 4 : {
                                 System.out.println("DECIMAL TO ALL NUMBER SYSTEMS ");
                                 System.out.println();
@@ -276,6 +306,7 @@ public class numbersystema{
                             }
                             break;
                         }
+
                         System.out.println();
                         System.out.println("\"YOUR APP YOUR CHOICE\"");
                         System.out.println("IF YOU WANT TO USE DECIMAL NS AGAIN \" ENTER Y OR y \" ");
@@ -289,7 +320,9 @@ public class numbersystema{
                 }
                 break;
                 case 4 : {
+
                     char hexadecimalchoice;
+
                     do {
                         System.out.println();
                         System.out.println("\"WELCOME TO HEXA-DECIMAL NUMBER SYSTEM\" ");
@@ -301,14 +334,19 @@ public class numbersystema{
 
                         boolean hexadecimalb;
                         do {
+
                             hexadecimalb = true;
+
                             for (int i = 0; i < hexadecimalvalue.length(); i++) {
+
                                 char x = hexadecimalvalue.charAt(i);
+
                                 if ( x != '0' && x != '1' && x != '2' && x != '3' && x != '4' && x != '5' && x != '6' && x != '7' && x != '8' && x != '9' && x != 'A' && x != 'B' && x != 'C' && x != 'D' && x != 'E' && x != 'F') {
                                     hexadecimalb = false;
                                     break;
                                 }
                             }
+
                             if (!hexadecimalb ) {
                                 System.out.println("GIVEN VALUE IS NOT IN HEXA-DECIMAL !!");
                                 System.out.print("PLEASE GIVE YOUR INPUT HEXA-DECIMAL VALUE HERE AGAIN : ");
@@ -337,21 +375,25 @@ public class numbersystema{
                         }
 
                         switch (hexaconvechoice) {
+
                             case 1 : {
                                 System.out.println("HEXA-DECIMAL TO BINARY ");
                                 hexadecimalToBinary( hexadecimalvalue );
                             }
                             break;
+
                             case 2 : {
                                 System.out.println("HEXA-DECIMAL TO OCTAL ");
                                 hexadecimalToOctal( hexadecimalvalue );
                             }
                             break;
+
                             case 3 : {
                                 System.out.println("HEXA-DECIMAL TO DECIMAL ");
                                 hexadecimalToDecimal( hexadecimalvalue );
                             }
                             break;
+
                             case 4 : {
                                 System.out.println("HEXA-DECIMAL TO ALL NUMBER SYSTEMS ");
                                 System.out.println();
@@ -367,6 +409,7 @@ public class numbersystema{
                             }
                             break;
                         }
+
                         System.out.println();
                         System.out.println("\"YOUR APP YOUR CHOICE\"");
                         System.out.println("IF YOU WANT TO USE HEXA-DECIMAL NS AGAIN \" ENTER Y OR y \" ");
@@ -390,9 +433,9 @@ public class numbersystema{
             userchoice = hu.next().charAt(0);
         }
         while ( userchoice == 'Y' || userchoice == 'y' );
+
         System.out.println("EXIXTNG NUMBER SYSTEM WEB APP ");
         System.out.println("THANK YOU !! ");
-
         hu.close();
     }
    
